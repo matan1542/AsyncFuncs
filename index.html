@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiTube</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()">
+    <header>
+        <nav class="navbar-header">
+            <h1 class="logo">WikiTube</h1>
+            <div></div>
+            <form onsubmit="onSearch(event)" class="search-container">
+            <input type="search" name="search" list="symbols" placeholder="Search">
+            <button class="btn btn-search">Search</button>
+        </form>
+        </nav>
+    </header>
+    <main>
+        <section class="results-container">
+            <div class="youtube-results-container">
+               
+            </div>
+            <div class="youtube-video-container">
+                
+            </div>
+        </section>
+    </main>
+
+
+    <script src="../lib/swal.js"></script>
+    <script src="../lib/axios.js"></script>
+    <script src="js/storage/storage-service.js"></script>
+    <script src="js/services/wikitube-service.js"></script>
+    <script src="js/controllers/wikitube-controller.js"></script>
+</body>
+
+</html>
